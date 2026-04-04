@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — QuizApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <span class="logo">🧠 QuizApp</span>
+      <a href="index.html">Voir les quiz</a>
+      <a href="adminList.html">liste des quiz</a>
+    </nav>
+
+    <div class="container">
+      <h1>Créer un quiz</h1>
+      <p class="subtitle">Ajoute une nouvelle question pour les utilisateurs</p>
+
+      <div class="card">
+        <input id="question" placeholder="question..." />
+        <input id="option1" placeholder="Option 1" />
+        <input id="option2" placeholder="Option 2" />
+        <input id="correct" placeholder="Bonne réponse " />
+        <button onclick="createQuiz()"> Créer le quiz</button>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
