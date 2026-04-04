@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="dashoard.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./ChatGPT_Image_11_mars_2026__13_46_38-removebg-preview 3.png" alt="logo" />
+            <div>
+                <h3>DASHBOARD ADMIN</h3>
+                <h2>Gerer les quiz et les utulisateurs</h2>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container_dashboard">
+            <div class="menu_dash">
+                <div class="ensemble">
+                    <a href="Dashboard.html" id="ensemble">Vue d'ensemble</a>
+                </div>
+                <div>
+                    <a href="DashboardUser.html">utulisateurs</a>
+                </div>
+                <div>
+                    <a href="Dashboard.html">Quiz</a>
+                </div>
+                <div id="fin">
+                    <a href="Dashboard.html">Creer des Quiz</a>
+                </div>
+            </div>
+        </div>
+        <div class="statistique">
+            <div>
+                <div>
+                    <h4>1000</h4>
+                    <h4>Total utulisateurs</h4>
+                </div>
+                <div>
+                    <h4>20</h4>
+                    <h4>Total Quiz</h4>
+                </div>
+                <div>
+                    <h4>8</h4>
+                    <h4>Quiz Complètés</h4>
+                </div>
+                <div>
+                    <h4>75%</h4>
+                    <h4>Taux de reussite</h4>
+                </div>
+            </div>
+        </div>
+        <div class="graphique_dash">
+            <div>
+                <h4></h4>
+                <div class="chart">
+                    <div class="bars">
+                        <div class="bar" data-value="10"><span>Lun</span></div>
+                        <div class="bar" data-value="20"><span>Mar</span></div>
+                        <div class="bar" data-value="15"><span>Mer</span></div>
+                        <div class="bar" data-value="30"><span>Jeu</span></div>
+                        <div class="bar" data-value="25"><span>Ven</span></div>
+                        <div class="bar" data-value="40"><span>Sam</span></div>
+                        <div class="bar" data-value="50"><span>Dim</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activite_recent">
+            <div class="container_activite">
+                <h4>Activités recente</h4>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+                <div>
+                    <div>
+                        <h4>Nouveau Quiz Complété</h4>
+                        <h6>Il y'a 2h </h6>
+                    </div>
+                    <h5>Par Jean Bernard</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    const bars = document.querySelectorAll(".bar");
+
+    // récupérer la valeur max
+    let max = 0;
+    bars.forEach((bar) => {
+        const value = parseInt(bar.dataset.value);
+        if (value > max) max = value;
+    });
+
+    // appliquer la hauteur proportionnelle
+    bars.forEach((bar) => {
+        const value = parseInt(bar.dataset.value);
+        const height = (value / max) * 100;
+        bar.style.height = height + "%";
+    });
+</script>
+
+</html>
