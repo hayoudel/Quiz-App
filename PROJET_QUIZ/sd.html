@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartQuiz – Accueil</title>
+  <link rel="stylesheet" href="./css/sd.css">
+
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo1" href="#">
+      <div class="logo-icon1">
+        <!-- Mini bulb SVG -->
+        <img src="./img/ChatGPT_Image_11_mars_2026__13_46_38-removebg-preview.png" alt="">
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Accueil</a></li>
+      <li><a href="#categories">Classement</a></li>
+      <li><a href="#">Inscription</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      <span class="brand">SmartQuiz</span> est une application<br>
+      web de quiz interactive
+    </h1>
+    <p>
+      Apprendre, s'entraîner ou tester ses connaissances de manière simple et rapide.
+    </p>
+    <a class="btn-start" href="#categories">Commencer</a>
+  </div>
+
+  <!-- CSS Brain Illustration -->
+  <div class="hero-illustration">
+    <div class="brain-scene">
+        <img src="./img/Épinglé_sur_files___Mozilla_Firefox_19_03_2026_04_42_06-removebg-preview.png" alt="">
+    </div>
+
+
+</section>
+
+<!-- ══ CATEGORIES ══ -->
+<section class="categories" id="categories">
+  <h2 class="section-title">Les Catégories</h2>
+
+  <div class="cards-grid">
+
+    <!-- Sciences -->
+    <a class="cat-card sciences" href="#">
+      <div class="cat-icon">
+        <!-- X subscript icon -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          <text x="16" y="20" font-size="7" fill="currentColor" stroke="none" font-family="serif" font-style="italic">2</text>
+        </svg>
+      </div>
+      <div class="cat-body">
+        <h3>Sciences</h3>
+        <p>« Comprendre le monde en jouant »</p>
+      </div>
+    </a>
+
+    <!-- Développement -->
+    <a class="cat-card dev" href="#">
+      <div class="cat-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+        </svg>
+      </div>
+      <div class="cat-body">
+        <h3>Développement</h3>
+        <p>« Apprends à coder en jouant »</p>
+      </div>
+    </a>
+
+    <!-- Network -->
+    <a class="cat-card network" href="#">
+      <div class="cat-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <div class="cat-body">
+        <h3>Network</h3>
+        <p>« Du câble au cloud, deviens expert »</p>
+      </div>
+    </a>
+
+    <!-- Culture générale -->
+    <a class="cat-card culture" href="#">
+      <div class="cat-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+      </div>
+      <div class="cat-body">
+        <h3>Culture générale</h3>
+        <p>« Savoir un peu de tout, ça change tout »</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+      <a class="logo" href="#">
+        <div class="logo-icon">
+         <img src="./img/ChatGPT_Image_11_mars_2026__13_46_38-removebg-preview.png" alt="">
+        </div>
+      </a>
+    </div>
+
+    <!-- Col Quiz -->
+    <div class="footer-col">
+        <h4>Quiz</h4>
+      <ul>
+        <li><a href="#">Dev</a></li>
+        <li><a href="#">Network</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Culture générale</a></li>
+      </ul>
+    </div>
+
+    <!-- Empty col spacer -->
+    <div class="footer-col"></div>
+
+    <!-- Col Informations -->
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <div class="footer-info-links">
+        <a href="#">Avis</a>
+        <a href="#">À propos</a>
+        <a href="#">Nous contacter</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
