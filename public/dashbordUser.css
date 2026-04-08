@@ -88,15 +88,23 @@ main{
     align-items: center;
     width: 70%;
 }
+.conatinerSearch > div:first-of-type{
+    background-color: #EB7272;
+    width: 700px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    }
 
 .conatinerSearch div input[type="search"]{
-    width: 700px;
-    background-color: #EB7272;
-    padding: 15px;
+    border: none;
+    outline: none;
     color: #000;
-    text-align: center;
-    border: 1px solid #ccc;
+    background-color: transparent;
+
 }
+
 input::placeholder {
     color: #000;
 }
@@ -107,6 +115,10 @@ input::placeholder {
     color: white;
     text-align: center;
     border: 1px solid white;
+}
+/* enlever la croix */
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 .VisuelTable{
     display: flex;
@@ -154,6 +166,7 @@ tr:hover {
     cursor: pointer;
     font-size: 14px;
     margin-right: 5px;
+    width: 100px;
 }
 
 .edit {
